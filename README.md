@@ -15,7 +15,25 @@ npm install -S @jswork/next-try-apply-get
 ```js
 import '@jswork/next-try-apply-get';
 
-//DOCS here!
+const target1 = (data) => {
+  return { name: 'fei', ...data };
+};
+
+const target2 = { name: 'aric' };
+
+const res1 = nx.tryApplyGet(target1, [{ github: 'afeiship', hobby: 'coding' }]);
+const res2 = nx.tryApplyGet(target2);
+/*
+// res1
+{
+  name: 'fei',
+  github: 'afeiship',
+  hobby: 'coding'
+}
+
+// res2
+{ name: 'aric' }
+*/
 ```
 
 ## license
