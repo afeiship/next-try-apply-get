@@ -15,14 +15,19 @@ npm install -S @jswork/next-try-apply-get
 ```js
 import '@jswork/next-try-apply-get';
 
+// 1. target is function
 const target1 = (data) => {
   return { name: 'fei', ...data };
 };
 
+// 2. target is not a function
 const target2 = { name: 'aric' };
 
+
+// get the results
 const res1 = nx.tryApplyGet(target1, [{ github: 'afeiship', hobby: 'coding' }]);
 const res2 = nx.tryApplyGet(target2);
+
 /*
 // res1
 {
