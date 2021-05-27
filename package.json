@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-try-apply-get",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Try to get value from target(fn) or target(other data).",
   "homepage": "https://github.com/afeiship/next-try-apply-get",
   "author": {
@@ -40,5 +40,14 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "try",
+    "apply",
+    "call",
+    "invoke",
+    "function",
+    "get"
+  ]
 }
